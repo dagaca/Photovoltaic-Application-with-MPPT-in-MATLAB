@@ -42,11 +42,13 @@ Sistemde yer alan Diyot ve IGBT Diyot ideal olarak kabul edilerek simülasyon ge
 
 ### IGBT/Diode 
 Ideal bir IGBT diode için, internal resistance sıfır, snubber resistance ve snubber capacitance değerleri de sıfır olmalıdır. Ancak internal resistance, snubber resistance ve snubber capacitance değerleri için ideal bir IGBT diode kullanırken, discrete zamanlama türünde hata mesajı verir. Discrete zamanlama türünü kullanmaya devam etmek için, bu değerler çok küçük ancak sıfırdan farklı değerler olarak ayarlandı. Bu, ideal bir IGBT diodeyi yaklaşık olarak taklit ederken, hala discrete zamanlama türünün kullanılabilmesini sağladı.
+
 ![igbt_parameters](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/822233cf-f67f-4cb1-8245-018248c5c2aa)
 
 
 ### Diode
 Ideal bir diyot için Resistance Ron sıfır (0) olmalıdır. Inductance Lon da aynı şekilde sıfır (0) olmalıdır. Forward voltage Vf değeri diyotun pozitif yönden negatif yöne geçiş sırasında ürettiği gerilim değeridir ve ideal bir diyot için sıfır (0) olmalıdır. Snubber resistance Rs ve Snubber capacitance Cs değerleri ise, diyotun geçiş sırasında ürettiği dalgalanmaları sönümlemek için kullanılan direnç ve kapasitördür. Ideal bir diyot için bu değerler de sıfır (0) olmalıdır. Ancak, discrete zamanlama türünü kullanmaya devam etmek için, bu değerler çok küçük ancak sıfırdan farklı değerler olarak ayarlandı. Bu, ideal bir IGBT diodeyi yaklaşık olarak taklit ederken, hala discrete zamanlama türünü kullanabilmemizi sağladı.
+
 ![diode_parameters](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/145c7053-a96b-48d8-aca4-64747b723917)
 
 
@@ -98,64 +100,98 @@ Kp (Oransal Kazanç) ve Ki (İntegral Kazanç) değerleri doğru seçilerek iste
 ### Sabit Irradiation (1000 W/m^2) Grafikler
 
 **Sabit Irradiation PV (MSX 83) Akım Voltaj Grafikleri**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/f05bc850-bfc2-4daa-a4dd-ff31f0bac831)
 
+
 **Sabit Irradiation PV (MSX 83) Güç Grafiği**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/6b9b3091-ba6e-4558-b97c-ec33efbe51b0)
 
+
 **Sabit Irradiation IGBT Akım Voltaj Grafikleri**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/27d589ab-a102-44f0-9afe-b9e680c95991)
 
+
 **Sabit Irradiation Diyot Akım Voltaj Grafikleri**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/b8a0c108-7d92-4b63-8d60-7e0b8fa3fb31)
 
+
 **Sabit Irradiation Load (Yük) Akım Grafiği**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/4688b656-65ad-4da8-8c68-f149321aa1cb)
 
+
 **Sabit Irradiation Load (Yük) Voltaj Grafiği**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/63b5bdab-3ad5-4bbd-94e5-b9f982c34d14)
 
+
 **Sabit Irradiation Load (Yük) Güç Grafiği**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/724c79a3-513c-4992-97df-fa49ae23bbc5)
 
 ### Değişken Irradiation Grafikler
 **Değişken Irradiation PV (MSX 83) Akım Voltaj Grafikleri**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/3c43016b-e5f8-4d67-bb2e-e3c0961d604f)
 
+
 **Değişken Irradiation PV (MSX 83) Güç Grafiği**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/eb658ffc-eaea-4b1d-8b0f-3b11b9050e56)
 
+
 **Değişken Irradiation IGBT Akım Voltaj Grafikleri**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/cccf4872-5f5e-432b-979f-5b0d6416d756)
 
+
 **Değişken Irradiation Diyot Akım Voltaj Grafikleri**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/a273d762-faf2-4c36-8baa-8e12a204f1f3)
 
+
 **Değişken Irradiation Load (Yük) Akım Grafiği**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/f0c61704-5305-41ed-9fb1-1f46e96096ff)
 
+
 **Değişken Irradiation Load (Yük) Voltaj Grafiği**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/60849edc-2324-4cff-a388-9f1ba074be4d)
 
+
 **Değişken Irradiation Load (Yük) Güç Grafiği**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/6774f816-1ca7-4b4a-aa16-597abdada801)
+
+
 
 ## Sonuçlar
 **PV Array Karakteristik İncelemesi**
 Dört seri bağlı PV panel kullanılıyor ve her panelin maksimum güç noktası 82.935 W olduğundan, sistemin toplam güç çıkışı 4 x 82.935 W = 331.7 W olacaktır. Bu durum başlangıçta modellenmiş olunan 4 seri modülden oluşan PV Array karakteristik eğrilerine bakıldığında  maximum power noktasının Şekil1’de data cursor ile işaretlenmiş olan 331.7 W olduğu gözlemlendi.
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/2e0376af-daae-4745-a1e2-0cc398dd8dbf)
+
 
 **Değişken Irradiation Sonuçları**
 PV panelinin güneş ışınlarının yoğunluğunun (W/m^2) değişmesi sonucu, sistemin verimliliğinde değişiklikler meydana gelebilir. Bu değişiklikler, sistem tasarımı ve kullanılan yükler gibi faktörlere göre farklılık gösterebilir. Düşük yoğunlukta güneş ışınlarının olması durumunda, PV panelinin gerilim ve akım değerleri düşecektir ve sistem toplam gücü de azalacaktır. Bunun tersi de geçerlidir, yüksek yoğunlukta güneş ışınlarının olması durumunda, PV panelinin gerilim ve akım değerleri artacak ve sistem toplam gücü de artacaktır. Bu değişikliklerin etkisi Değişken Irradiation Grafikler kısmında gösterildi, PV panelinin gerilim ve akım değerleri zaman içinde izlendi, yüklerin gerilim ve akım değerlerine göre sistemin toplam gücünün nasıl değiştiği gözlemlendi. 
 
 **Değişken Irradiation PV panel ve Yük Güç Grafiği**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/528e6b60-554b-4fbb-a2e7-d76851a981a6)
+
 
 **Sabit Irradiation Sonuçları**
 PV sistem çıkışından ölçülen maximum güç değeri 331.658 W ve yük (load) çıkışından ölçülen maximum güç değeri 331.658 W (Şekil2).  PV Array karakteristik eğrisinde bulunan maximum power noktası da 331.7 W olarak gözlemlenmiştir (Şekil1). Bu veriler, tasarım hedeflerine uygun bir şekilde bir PV sistemi tasarlandığını göstermektedir. Burada panel güç değeri ile yük güç değerinin birbiri ile neredeyse aynı çıktığı gözlemlendi, bu demektir ki sistem doğru bir şekilde çalışmaktadır ve hedeflenen güç değerine ulaşılmıştır. Bu durumun sürekliliğinin kontrol edilmesi gerekmektedir, ancak genel olarak sistem performansının iyi olduğu söylenebilir. Model ayrık zamanlı olarak simüle edilerek örnekleme zamanı (5e-07) olabildiğince küçük seçilerek simülasyon hataları azaltıldı ve sistem tasarımı sırasında dalgalanmaların (gürültülerin) minimize edilmesine özen gösterildi.
 
 **Sabit Irradiation PV panel ve Yük Güç Grafiği**
+
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/745bcea8-8036-4092-94c2-acba18e4ac7f)
+
 
 
 ## Referanslar
