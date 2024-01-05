@@ -1,5 +1,6 @@
 # Photovoltaic-Application-with-MPPT-in-MATLAB
-Bu repo, Simulink kullanarak Maximum Power Point Tracking (MPPT) özellikli bir Fotovoltaik (PV) sistemini uygular. Parametreler, **'Machine Learning and Deep Learning for Photovoltaic Applications'** adlı kaynaktan elde edilen karakteristiklere dayanmaktadır.
+Bu repo, Simulink kullanılarak Maximum Power Point Tracking (MPPT) özellikli bir Fotovoltaik (PV) sistemini uygular. Parametreler, **'Machine Learning and Deep Learning for Photovoltaic Applications'** adlı kaynaktan elde edilen karakteristiklere dayanmaktadır.
+MATLAB Simulink projesi MATLAB R2017b sürümü kullanılarak oluşturulmuştur.
 
 ## MATLAB Simulink Şeması
 
