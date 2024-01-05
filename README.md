@@ -1,23 +1,23 @@
 # Photovoltaic-Application-with-MPPT-in-MATLAB
-
+Bu repo, Simulink kullanarak Maximum Power Point Tracking (MPPT) özellikli bir Fotovoltaik (PV) sistemini uygular. Parametreler, **'Machine Learning and Deep Learning for Photovoltaic Applications'** adlı kaynaktan elde edilen karakteristiklere dayanmaktadır.
 
 ## MATLAB Simulink Şeması
+
 ![simulink_sema](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/d2c3fd64-954d-433e-94c9-30cb698245f3)
 
 
 ### PV Array (MSX 83) Blok ve Parametreler
+
 ![pvarray](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/db55c459-5657-4812-8893-23ca7f2ea728)
 
 
-‘**Machine Learning and Deep Learning for Photovoltaic Applications**’ adlı kaynaktan faydalanılarak parametreler belirlendi.
-
-
 #### Tek Modül için I-V ve P-V Özellikleri (1000W/m2)
+
 ![tekmodul](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/6e71ea6d-3204-4994-b210-a63067c92105)
 
 
-
 #### Dört Seri Bağlı Modül için I-V ve P-V Özellikleri (1000W/m2)
+
 ![dortserimodul](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/72069807-ab42-40ba-86c2-d97ae8f9bdf4)
 
 
@@ -206,3 +206,11 @@ PV sistem çıkışından ölçülen maximum güç değeri 331.658 W ve yük (lo
 ⦁	Proportional plus Integral (PI) Control for Maximum Power Point Tracking in Photovoltaic Systems, Arun Raj ve Anu Gopinath
 
 ⦁	Machine Learning and Deep Learning for Photovoltaic Applications
+
+
+
+## Nasıl Başlamalı?
+
+1. Bu repo'yu bilgisayarınıza klonlayın.
+   ```bash
+   git clone https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB.git
