@@ -17,10 +17,14 @@
 
 #### Simülasyon Durumları
 PV sistem iki durum altında simüle edildi. Bu durumlardan ilki sabit irradiation, ikincisi değişken irradiation.
+
 ⦁	Durum -> G = 1000 W/m2 and T = 25 °C
+
 ![sabit_irr](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/f14cd1f5-c1d7-47be-aa82-5281315c5574)
 
+
 ⦁	Durum -> G = 1000 W/m2 ’den 600 W/m2 ‘ye kademeli değişim, ardından 400 W/m2‘ye ani değişim.
+
 ![degisken_irr](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/1924fa96-0071-46d5-b85b-0c7d5d275ad7)
 
 ## Boost Konvertörler
