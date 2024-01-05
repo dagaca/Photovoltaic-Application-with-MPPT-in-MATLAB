@@ -40,13 +40,13 @@ PV sistem iki durum altında simüle edildi. Bu durumlardan ilki sabit irradiati
 Sistemde yer alan Diyot ve IGBT Diyot ideal olarak kabul edilerek simülasyon gerçekleştirildi. Aşağıda detayları ve parametreleri yer almaktadır.
 
 
-### IGBT/Diode 
+### IGBT
 Ideal bir IGBT diode için, internal resistance sıfır, snubber resistance ve snubber capacitance değerleri de sıfır olmalıdır. Ancak internal resistance, snubber resistance ve snubber capacitance değerleri için ideal bir IGBT diode kullanırken, discrete zamanlama türünde hata mesajı verir. Discrete zamanlama türünü kullanmaya devam etmek için, bu değerler çok küçük ancak sıfırdan farklı değerler olarak ayarlandı. Bu, ideal bir IGBT diodeyi yaklaşık olarak taklit ederken, hala discrete zamanlama türünün kullanılabilmesini sağladı.
 
 ![igbt_parameters](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/822233cf-f67f-4cb1-8245-018248c5c2aa)
 
 
-### Diode
+### Diyot
 Ideal bir diyot için Resistance Ron sıfır (0) olmalıdır. Inductance Lon da aynı şekilde sıfır (0) olmalıdır. Forward voltage Vf değeri diyotun pozitif yönden negatif yöne geçiş sırasında ürettiği gerilim değeridir ve ideal bir diyot için sıfır (0) olmalıdır. Snubber resistance Rs ve Snubber capacitance Cs değerleri ise, diyotun geçiş sırasında ürettiği dalgalanmaları sönümlemek için kullanılan direnç ve kapasitördür. Ideal bir diyot için bu değerler de sıfır (0) olmalıdır. Ancak, discrete zamanlama türünü kullanmaya devam etmek için, bu değerler çok küçük ancak sıfırdan farklı değerler olarak ayarlandı. Bu, ideal bir IGBT diodeyi yaklaşık olarak taklit ederken, hala discrete zamanlama türünü kullanabilmemizi sağladı.
 
 ![diode_parameters](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/145c7053-a96b-48d8-aca4-64747b723917)
@@ -89,7 +89,7 @@ Bu şekilde, MPPT algoritmasında kullanılan Vrefinit, Vrefmax ve deltaVref de�
 
 
 
-## PI Controller 
+## PI Kontrolör
 Kp (Oransal Kazanç) ve Ki (İntegral Kazanç) değerleri doğru seçilerek istenilen yanıt elde edilebilir.
 
 ![pi](https://github.com/dagaca/Photovoltaic-Application-with-MPPT-in-MATLAB/assets/80363244/73be6e01-93d2-4461-a507-31814d6ddde5)
